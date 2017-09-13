@@ -15,11 +15,10 @@ protocol ___VARIABLE_moduleName___PresenterInput {
   func presentSomething()
 }
 protocol ___VARIABLE_moduleName___PresenterOutput {
-  func didChangeState(viewModel : ___VARIABLE_moduleName___.Something.ViewModel)
+  func didChangeState(viewModel : ___VARIABLE_moduleName___.DataContext.ViewModel)
 }
 
-class ___VARIABLE_moduleName___Presenter: ___VARIABLE_moduleName___PresenterInput
-{
+class ___VARIABLE_moduleName___Presenter: ___VARIABLE_moduleName___PresenterInput {
   //MARK: - Essentials
   var view: UIViewController!
   var output : ___VARIABLE_moduleName___PresenterOutput?
@@ -47,8 +46,7 @@ class ___VARIABLE_moduleName___Presenter: ___VARIABLE_moduleName___PresenterInpu
   }
   
   // MARK: - Presenter Input
-  func presentSomething()
-  {
+  func presentSomething() {
     // ask router to navigate somewhere or ask interactor for resources... it's up to you
     // like:
     // let requestParams = RequestParams()
@@ -60,11 +58,11 @@ class ___VARIABLE_moduleName___Presenter: ___VARIABLE_moduleName___PresenterInpu
 }
 extension ___VARIABLE_moduleName___Presenter : ___VARIABLE_moduleName___InteractorOutput {
   //MARK: - Interactor output
-  func didReceive(some data: Any){
+  func didReceive(some data: Any) {
     // Process it and act accordingly like:
     // self.output?.didChangeState(viewModel : )
   }
-  func didFail(with error: Error){
+  func didFail(with error: Error) {
 //    self.router.showError(error: error)
   }
 }

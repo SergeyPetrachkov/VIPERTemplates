@@ -11,20 +11,14 @@
 
 import UIKit
 
-enum ___VARIABLE_moduleName___
-{
-  // MARK: Use cases
-  
-  enum Something
-  {
-    struct Request
-    {
+enum ___VARIABLE_moduleName___ {
+  // MARK: - Use cases
+  enum DataContext {
+    struct Request {
     }
-    struct Response
-    {
+    struct Response {
     }
-    struct ViewModel
-    {
+    struct ViewModel {
     }
   }
 }

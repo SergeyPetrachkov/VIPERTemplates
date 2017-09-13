@@ -18,31 +18,27 @@ class ___VARIABLE_moduleName___ViewController: UIViewController {
   var presenter : ___VARIABLE_moduleName___PresenterInput?
 
   // MARK: Initializers
-  override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
-  {
+  override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
     super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     setup()
   }
-  required init?(coder aDecoder: NSCoder)
-  {
+  required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
     setup()
   }
   
   // MARK: - Setup
-  private func setup()
-  {
+  private func setup() {
     self.presenter = ___VARIABLE_moduleName___Presenter(view: self, output: self)
   }
   
   // MARK: - Lifecycle
-  override func viewDidLoad()
-  {
+  override func viewDidLoad() {
     super.viewDidLoad()
   }
 }
 extension ___VARIABLE_moduleName___ViewController : ___VARIABLE_moduleName___PresenterOutput {
-  func didChangeState(viewModel : ___VARIABLE_moduleName___.Something.ViewModel){
+  func didChangeState(viewModel : ___VARIABLE_moduleName___.DataContext.ViewModel) {
     
   }
 }

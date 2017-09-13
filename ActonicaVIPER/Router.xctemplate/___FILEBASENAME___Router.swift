@@ -11,14 +11,12 @@
 
 import UIKit
 
-protocol ___VARIABLE_moduleName___RoutingLogic
-{
+protocol ___VARIABLE_moduleName___RoutingLogic {
 //  func showSomething(from view: UIViewController, with routingParams : YourRoutingParams)
 }
 
 
-class ___VARIABLE_moduleName___Router: ___VARIABLE_moduleName___RoutingLogic
-{
+class ___VARIABLE_moduleName___Router: ___VARIABLE_moduleName___RoutingLogic {
   // MARK: Routing
 //  func showSomething(from view: UIViewController, with routingParams : YourRoutingParams) {
 //    let nextVC = NextViewController()

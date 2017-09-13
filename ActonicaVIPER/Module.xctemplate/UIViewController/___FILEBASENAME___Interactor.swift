@@ -11,10 +11,9 @@
 
 import UIKit
 
-protocol ___VARIABLE_moduleName___InteractorInput
-{
+protocol ___VARIABLE_moduleName___InteractorInput {
   var output : ___VARIABLE_moduleName___InteractorOutput? { get set }
-  func doSomething(request: ___VARIABLE_moduleName___.Something.Request)
+  func doSomething(request: ___VARIABLE_moduleName___.DataContext.Request)
 }
 
 protocol ___VARIABLE_moduleName___InteractorOutput {
@@ -22,20 +21,16 @@ protocol ___VARIABLE_moduleName___InteractorOutput {
   func didFail(with error: Error)
 }
 
-protocol ___VARIABLE_moduleName___DataStore
-{
+protocol ___VARIABLE_moduleName___DataStore {
   //var name: String { get set }
 }
 
-class ___VARIABLE_moduleName___Interactor: ___VARIABLE_moduleName___InteractorInput, ___VARIABLE_moduleName___DataStore
-{
+class ___VARIABLE_moduleName___Interactor: ___VARIABLE_moduleName___InteractorInput, ___VARIABLE_moduleName___DataStore {
   let service: ___VARIABLE_moduleName___Service = ___VARIABLE_moduleName___Service()
   var output: ___VARIABLE_moduleName___InteractorOutput?
   
   // MARK: Do something
-  
-  func doSomething(request: ___VARIABLE_moduleName___.Something.Request)
-  {
+  func doSomething(request: ___VARIABLE_moduleName___.DataContext.Request) {
     // Let's say we execute some async operation, then we want to be able to inform our output when the operation is finshed
     // self.service.requestSomeDataAsync(requestParams: params, 
     //                                          succes: {

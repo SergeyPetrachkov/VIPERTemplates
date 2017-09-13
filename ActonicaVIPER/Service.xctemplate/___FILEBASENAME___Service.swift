@@ -11,9 +11,7 @@
 
 import UIKit
 
-class ___VARIABLE_moduleName___Service
-{
-  func doSomeWork()
-  {
+class ___VARIABLE_moduleName___Service {
+  func doSomeWork() {
   }
 }
