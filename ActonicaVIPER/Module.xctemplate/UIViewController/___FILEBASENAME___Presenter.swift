@@ -22,7 +22,7 @@ class ___VARIABLE_moduleName___Presenter: ___VARIABLE_moduleName___PresenterInpu
   //MARK: - Essentials
   var view: UIViewController!
   var output : ___VARIABLE_moduleName___PresenterOutput?
-  var viewModel : ___VARIABLE_moduleName___.Something.ViewModel? {
+  var viewModel : ___VARIABLE_moduleName___.DataContext.ViewModel? {
     didSet{
       guard let viewModel = self.viewModel else {
         return
