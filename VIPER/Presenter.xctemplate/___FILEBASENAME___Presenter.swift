@@ -56,7 +56,7 @@ class ___VARIABLE_moduleName___Presenter: ___VARIABLE_moduleName___PresenterInpu
   }
 }
 extension ___VARIABLE_moduleName___Presenter : ___VARIABLE_moduleName___InteractorOutput {
-  //MARK: - Interactor output
+  // MARK: - Interactor output
   func didReceive(some data: Any) {
     // Process it and act accordingly like:
     // self.output?.didChangeState(viewModel : )
