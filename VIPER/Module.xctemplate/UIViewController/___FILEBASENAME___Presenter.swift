@@ -24,8 +24,8 @@ protocol ___VARIABLE_moduleName___PresenterOutput: class {
 
 class ___VARIABLE_moduleName___Presenter: ___VARIABLE_moduleName___PresenterInput {
   // MARK: - Essentials
-  var view: UIViewController!
-  var output : ___VARIABLE_moduleName___PresenterOutput?
+  weak var view: UIViewController!
+  weak var output : ___VARIABLE_moduleName___PresenterOutput?
   var viewModel : ___VARIABLE_moduleName___.DataContext.ViewModel? {
     didSet{
       guard let viewModel = self.viewModel else {
@@ -41,7 +41,9 @@ class ___VARIABLE_moduleName___Presenter: ___VARIABLE_moduleName___PresenterInpu
   init() {
     
   }
-  
+  deinit {
+    print("___VARIABLE_moduleName___Presenter deinit is called")
+  }
   // MARK: - Presenter Input
   func presentSomething() {
     // ask router to navigate somewhere or ask interactor for resources... it's up to you
