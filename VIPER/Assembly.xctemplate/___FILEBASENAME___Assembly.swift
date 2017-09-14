@@ -16,7 +16,7 @@ class ___VARIABLE_moduleName___Assembly {
   fileprivate static let storyboardId = "Module"
   fileprivate static let controllerStoryboardId = "___VARIABLE_moduleName___"
   // MARK: - Public methods
-  static func createModule() -> WelcomeViewController {
+  static func createModule() -> ___VARIABLE_moduleName___ViewController {
     if let controller = UIStoryboard(name: storyboardId, bundle: nil).instantiateViewController(withIdentifier: controllerStoryboardId) as? ___VARIABLE_moduleName___ViewController {
       let presenter = injectPresenter()
       presenter.output = controller
