@@ -12,15 +12,16 @@
 import UIKit
 
 protocol PlainCodeRoutingLogic {
-//  func showSomething(from view: UIViewController, with routingParams : YourRoutingParams)
+  func showInfoModule(from view: UIViewController)
 }
 
 
 class PlainCodeRouter: PlainCodeRoutingLogic {
   // MARK: Routing
-//  func showSomething(from view: UIViewController, with routingParams : YourRoutingParams) {
-//    let nextVC = NextViewController()
-//    nextVC.setup(with: routingParams)
-//    view.navigationController?.push(nextVC, animated: true)
-//  }
+  func showInfoModule(from view: UIViewController) {
+    let message: String = "Contact me and ask your question.\nTogether we will probably figure out all the necessary stuff 🤔"
+    let alertController = UIAlertController(title: "Go ahead!", message: message, preferredStyle: .alert)
+    alertController.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: nil))
+    view.present(alertController, animated: true, completion: nil)
+  }
 }

@@ -16,7 +16,7 @@ protocol PlainCodePresenterInput: class {
   var output: PlainCodePresenterOutput? { get set }
   var router : PlainCodeRoutingLogic? { get set }
   var interactor : PlainCodeInteractorInput? { get set }
-  func presentSomething()
+  func presentDialog()
 }
 protocol PlainCodePresenterOutput: class {
   func didChangeState(viewModel : PlainCode.DataContext.ViewModel)
@@ -45,14 +45,8 @@ class PlainCodePresenter: PlainCodePresenterInput {
     print("PlainCodePresenter deinit is called")
   }
   // MARK: - Presenter Input
-  func presentSomething() {
-    // ask router to navigate somewhere or ask interactor for resources... it's up to you
-    // like:
-    // let requestParams = RequestParams()
-    // self.interactor.getSomeData(requestParams: requestParams)
-    // or:
-    // let routingParams = RoutingParams(firstValue : self.viewModel.firstValue, secondValue: self.viewModel.secondValue)
-    // self.router.showNextModule(from: self.view, with: routingParams)
+  func presentDialog() {
+    self.router?.showInfoModule(from: self.view)
   }
 }
 extension PlainCodePresenter : PlainCodeInteractorOutput {
