@@ -19,9 +19,11 @@ protocol WelcomeRoutingLogic {
 class WelcomeRouter: WelcomeRoutingLogic {
   // MARK: Routing
   func showInfoModule(from view: UIViewController) {
-    let message: String = "Contact me and ask your question.\nTogether we will probably figure out all the necessary stuff 🤔"
-    let alertController = UIAlertController(title: "Go ahead!", message: message, preferredStyle: .alert)
-    alertController.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: nil))
-    view.present(alertController, animated: true, completion: nil)
+    let controller = PlainCodeAssembly.createModule()
+    view.present(controller, animated: true, completion: nil)
+//    let message: String = "Contact me and ask your question.\nTogether we will probably figure out all the necessary stuff 🤔"
+//    let alertController = UIAlertController(title: "Go ahead!", message: message, preferredStyle: .alert)
+//    alertController.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: nil))
+//    view.present(alertController, animated: true, completion: nil)
   }
 }
