@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3979EDD71F72BF3400D15238 /* PlainCodeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3979EDD01F72BF3400D15238 /* PlainCodeAssembly.swift */; };
+		3979EDD81F72BF3400D15238 /* PlainCodeEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3979EDD11F72BF3400D15238 /* PlainCodeEntities.swift */; };
+		3979EDD91F72BF3400D15238 /* PlainCodeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3979EDD21F72BF3400D15238 /* PlainCodeInteractor.swift */; };
+		3979EDDA1F72BF3400D15238 /* PlainCodePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3979EDD31F72BF3400D15238 /* PlainCodePresenter.swift */; };
+		3979EDDB1F72BF3400D15238 /* PlainCodeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3979EDD41F72BF3400D15238 /* PlainCodeRouter.swift */; };
+		3979EDDC1F72BF3400D15238 /* PlainCodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3979EDD51F72BF3400D15238 /* PlainCodeService.swift */; };
+		3979EDDD1F72BF3400D15238 /* PlainCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3979EDD61F72BF3400D15238 /* PlainCodeViewController.swift */; };
 		39E238271F696F11007A50C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E238261F696F11007A50C1 /* AppDelegate.swift */; };
 		39E2382C1F696F11007A50C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39E2382A1F696F11007A50C1 /* Main.storyboard */; };
 		39E2382E1F696F11007A50C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39E2382D1F696F11007A50C1 /* Assets.xcassets */; };
@@ -21,6 +28,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3979EDD01F72BF3400D15238 /* PlainCodeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainCodeAssembly.swift; sourceTree = "<group>"; };
+		3979EDD11F72BF3400D15238 /* PlainCodeEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainCodeEntities.swift; sourceTree = "<group>"; };
+		3979EDD21F72BF3400D15238 /* PlainCodeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainCodeInteractor.swift; sourceTree = "<group>"; };
+		3979EDD31F72BF3400D15238 /* PlainCodePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainCodePresenter.swift; sourceTree = "<group>"; };
+		3979EDD41F72BF3400D15238 /* PlainCodeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainCodeRouter.swift; sourceTree = "<group>"; };
+		3979EDD51F72BF3400D15238 /* PlainCodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainCodeService.swift; sourceTree = "<group>"; };
+		3979EDD61F72BF3400D15238 /* PlainCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainCodeViewController.swift; sourceTree = "<group>"; };
 		39E238231F696F11007A50C1 /* VIPERExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPERExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39E238261F696F11007A50C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39E2382B1F696F11007A50C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,6 +61,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3979EDCF1F72BF1800D15238 /* PlainCode */ = {
+			isa = PBXGroup;
+			children = (
+				3979EDD01F72BF3400D15238 /* PlainCodeAssembly.swift */,
+				3979EDD11F72BF3400D15238 /* PlainCodeEntities.swift */,
+				3979EDD21F72BF3400D15238 /* PlainCodeInteractor.swift */,
+				3979EDD31F72BF3400D15238 /* PlainCodePresenter.swift */,
+				3979EDD41F72BF3400D15238 /* PlainCodeRouter.swift */,
+				3979EDD51F72BF3400D15238 /* PlainCodeService.swift */,
+				3979EDD61F72BF3400D15238 /* PlainCodeViewController.swift */,
+			);
+			path = PlainCode;
+			sourceTree = "<group>";
+		};
 		39E2381A1F696F11007A50C1 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +121,7 @@
 		39E238471F696F6D007A50C1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				3979EDCF1F72BF1800D15238 /* PlainCode */,
 				39E238461F696F67007A50C1 /* Welcome */,
 			);
 			name = Modules;
@@ -125,12 +154,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Sergey Petrachkov";
 				TargetAttributes = {
 					39E238221F696F11007A50C1 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = TVTBG99HF3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -171,7 +201,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3979EDD81F72BF3400D15238 /* PlainCodeEntities.swift in Sources */,
 				39E238451F696F62007A50C1 /* WelcomeViewController.swift in Sources */,
+				3979EDDA1F72BF3400D15238 /* PlainCodePresenter.swift in Sources */,
 				39E2383F1F696F62007A50C1 /* WelcomeAssembly.swift in Sources */,
 				39E238421F696F62007A50C1 /* WelcomePresenter.swift in Sources */,
 				39E238401F696F62007A50C1 /* WelcomeEntities.swift in Sources */,
@@ -179,6 +211,11 @@
 				39E238431F696F62007A50C1 /* WelcomeRouter.swift in Sources */,
 				39E238271F696F11007A50C1 /* AppDelegate.swift in Sources */,
 				39E238411F696F62007A50C1 /* WelcomeInteractor.swift in Sources */,
+				3979EDD91F72BF3400D15238 /* PlainCodeInteractor.swift in Sources */,
+				3979EDDB1F72BF3400D15238 /* PlainCodeRouter.swift in Sources */,
+				3979EDD71F72BF3400D15238 /* PlainCodeAssembly.swift in Sources */,
+				3979EDDC1F72BF3400D15238 /* PlainCodeService.swift in Sources */,
+				3979EDDD1F72BF3400D15238 /* PlainCodeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +250,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -221,7 +260,12 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -262,7 +306,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -270,7 +316,12 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -304,7 +355,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sergeypetrachkov.VIPERExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -317,7 +369,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sergeypetrachkov.VIPERExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -340,6 +393,7 @@
 				39E238371F696F11007A50C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
