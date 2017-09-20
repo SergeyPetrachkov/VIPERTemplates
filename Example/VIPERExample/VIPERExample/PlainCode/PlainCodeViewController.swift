@@ -50,7 +50,7 @@ class PlainCodeViewController: UIViewController {
   
   // MARK: - Actions
   @objc fileprivate func buttonTapped() {
-    
+    self.presenter?.presentDialog()
   }
 }
 extension PlainCodeViewController : PlainCodePresenterOutput {

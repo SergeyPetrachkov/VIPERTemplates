@@ -44,7 +44,7 @@ class WelcomePresenter: WelcomePresenterInput {
   
   // MARK: - Presenter Input
   func requestMore() {
-    self.router?.showInfoModule(from: self.view)
+    self.router?.showPlainCodeModule(from: self.view)
   }
 }
 extension WelcomePresenter : WelcomeInteractorOutput {
