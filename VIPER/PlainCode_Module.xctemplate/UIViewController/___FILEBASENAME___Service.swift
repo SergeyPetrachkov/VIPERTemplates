@@ -11,7 +11,11 @@
 
 import UIKit
 
-class ___VARIABLE_moduleName___Service {
+protocol ___VARIABLE_moduleName___ServiceProtocol: class {
+  func doSomeWork()	
+}
+
+class ___VARIABLE_moduleName___Service: ___VARIABLE_moduleName___ServiceProtocol {
   func doSomeWork() {
   }
 }
