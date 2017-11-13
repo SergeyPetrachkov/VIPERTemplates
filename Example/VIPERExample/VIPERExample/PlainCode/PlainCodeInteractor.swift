@@ -21,11 +21,8 @@ protocol PlainCodeInteractorOutput: class {
   func didFail(with error: Error)
 }
 
-protocol PlainCodeDataStore {
-  //var name: String { get set }
-}
 
-class PlainCodeInteractor: PlainCodeInteractorInput, PlainCodeDataStore {
+class PlainCodeInteractor: PlainCodeInteractorInput {
   let service: PlainCodeService = PlainCodeService()
   weak var output: PlainCodeInteractorOutput?
   
