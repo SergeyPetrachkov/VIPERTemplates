@@ -22,7 +22,7 @@ protocol ___VARIABLE_moduleName___InteractorOutput: class {
 }
 
 class ___VARIABLE_moduleName___Interactor: ___VARIABLE_moduleName___InteractorInput {
-  let service: ___VARIABLE_moduleName___Service = ___VARIABLE_moduleName___Service()
+  let service: ___VARIABLE_moduleName___ServiceProtocol = ___VARIABLE_moduleName___Service()
   weak var output: ___VARIABLE_moduleName___InteractorOutput?
   
   // MARK: Do something
