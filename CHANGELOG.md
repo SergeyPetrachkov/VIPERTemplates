@@ -1,1 +1,4 @@
-massive refactoring and 2.0 release
+v2.3:
+
+* removed redundant protocols
+* updated example
