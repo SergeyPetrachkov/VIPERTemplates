@@ -21,11 +21,7 @@ protocol ___VARIABLE_moduleName___InteractorOutput: class {
   func didFail(with error: Error)
 }
 
-protocol ___VARIABLE_moduleName___DataStore {
-  //var name: String { get set }
-}
-
-class ___VARIABLE_moduleName___Interactor: ___VARIABLE_moduleName___InteractorInput, ___VARIABLE_moduleName___DataStore {
+class ___VARIABLE_moduleName___Interactor: ___VARIABLE_moduleName___InteractorInput {
   let service: ___VARIABLE_moduleName___Service = ___VARIABLE_moduleName___Service()
   weak var output: ___VARIABLE_moduleName___InteractorOutput?
   
