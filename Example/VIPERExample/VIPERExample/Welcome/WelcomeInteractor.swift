@@ -21,11 +21,7 @@ protocol WelcomeInteractorOutput: class {
   func didFail(with error: Error)
 }
 
-protocol WelcomeDataStore {
-  //var name: String { get set }
-}
-
-class WelcomeInteractor: WelcomeInteractorInput, WelcomeDataStore {
+class WelcomeInteractor: WelcomeInteractorInput {
   let service: WelcomeService = WelcomeService()
   weak var output: WelcomeInteractorOutput?
   

@@ -35,19 +35,19 @@
 		3979EDD41F72BF3400D15238 /* PlainCodeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainCodeRouter.swift; sourceTree = "<group>"; };
 		3979EDD51F72BF3400D15238 /* PlainCodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainCodeService.swift; sourceTree = "<group>"; };
 		3979EDD61F72BF3400D15238 /* PlainCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainCodeViewController.swift; sourceTree = "<group>"; };
-		3979EDED1F72C46400D15238 /* WelcomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WelcomeAssembly.swift; path = Modules/Welcome/WelcomeAssembly.swift; sourceTree = "<group>"; };
+		3979EDED1F72C46400D15238 /* WelcomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeAssembly.swift; sourceTree = "<group>"; };
 		39E238231F696F11007A50C1 /* VIPERExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPERExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39E238261F696F11007A50C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39E2382B1F696F11007A50C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		39E2382D1F696F11007A50C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39E238301F696F11007A50C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39E238321F696F11007A50C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		39E238391F696F62007A50C1 /* WelcomeEntities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeEntities.swift; path = Modules/Welcome/WelcomeEntities.swift; sourceTree = "<group>"; };
-		39E2383A1F696F62007A50C1 /* WelcomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeInteractor.swift; path = Modules/Welcome/WelcomeInteractor.swift; sourceTree = "<group>"; };
-		39E2383B1F696F62007A50C1 /* WelcomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomePresenter.swift; path = Modules/Welcome/WelcomePresenter.swift; sourceTree = "<group>"; };
-		39E2383C1F696F62007A50C1 /* WelcomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeRouter.swift; path = Modules/Welcome/WelcomeRouter.swift; sourceTree = "<group>"; };
-		39E2383D1F696F62007A50C1 /* WelcomeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeService.swift; path = Modules/Welcome/WelcomeService.swift; sourceTree = "<group>"; };
-		39E2383E1F696F62007A50C1 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = Modules/Welcome/WelcomeViewController.swift; sourceTree = "<group>"; };
+		39E238391F696F62007A50C1 /* WelcomeEntities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeEntities.swift; sourceTree = "<group>"; };
+		39E2383A1F696F62007A50C1 /* WelcomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeInteractor.swift; sourceTree = "<group>"; };
+		39E2383B1F696F62007A50C1 /* WelcomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomePresenter.swift; sourceTree = "<group>"; };
+		39E2383C1F696F62007A50C1 /* WelcomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeRouter.swift; sourceTree = "<group>"; };
+		39E2383D1F696F62007A50C1 /* WelcomeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeService.swift; sourceTree = "<group>"; };
+		39E2383E1F696F62007A50C1 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +73,20 @@
 				3979EDD61F72BF3400D15238 /* PlainCodeViewController.swift */,
 			);
 			path = PlainCode;
+			sourceTree = "<group>";
+		};
+		39C82DF61FB931990045E5F5 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				39E238391F696F62007A50C1 /* WelcomeEntities.swift */,
+				39E2383A1F696F62007A50C1 /* WelcomeInteractor.swift */,
+				39E2383B1F696F62007A50C1 /* WelcomePresenter.swift */,
+				39E2383C1F696F62007A50C1 /* WelcomeRouter.swift */,
+				39E2383D1F696F62007A50C1 /* WelcomeService.swift */,
+				39E2383E1F696F62007A50C1 /* WelcomeViewController.swift */,
+				3979EDED1F72C46400D15238 /* WelcomeAssembly.swift */,
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 		39E2381A1F696F11007A50C1 = {
@@ -104,25 +118,11 @@
 			path = VIPERExample;
 			sourceTree = "<group>";
 		};
-		39E238461F696F67007A50C1 /* Welcome */ = {
-			isa = PBXGroup;
-			children = (
-				39E238391F696F62007A50C1 /* WelcomeEntities.swift */,
-				39E2383A1F696F62007A50C1 /* WelcomeInteractor.swift */,
-				39E2383B1F696F62007A50C1 /* WelcomePresenter.swift */,
-				39E2383C1F696F62007A50C1 /* WelcomeRouter.swift */,
-				39E2383D1F696F62007A50C1 /* WelcomeService.swift */,
-				39E2383E1F696F62007A50C1 /* WelcomeViewController.swift */,
-				3979EDED1F72C46400D15238 /* WelcomeAssembly.swift */,
-			);
-			name = Welcome;
-			sourceTree = "<group>";
-		};
 		39E238471F696F6D007A50C1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				39C82DF61FB931990045E5F5 /* Welcome */,
 				3979EDCF1F72BF1800D15238 /* PlainCode */,
-				39E238461F696F67007A50C1 /* Welcome */,
 			);
 			name = Modules;
 			sourceTree = "<group>";
@@ -355,7 +355,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sergeypetrachkov.VIPERExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -369,7 +369,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sergeypetrachkov.VIPERExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
