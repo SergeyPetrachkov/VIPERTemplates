@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>DefaultCompletionName</key>
-	<string>MyModule</string>
+	<string>MySiberianTableModule</string>
 	<key>Description</key>
 	<string>This generates a new module using VIPER architecture. It consists of the view controller, interactor, presenter, and router. You can then create individual service to supplement the interactor.</string>
 	<key>Kind</key>
@@ -132,6 +132,20 @@
 		</dict>
 		<dict>
 			<key>Default</key>
+			<string>___VARIABLE_moduleName:identifier___Cell</string>
+			<key>Description</key>
+			<string>The cell name</string>
+			<key>Identifier</key>
+			<string>cellName</string>
+			<key>Name</key>
+			<string>Cell Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
 			<string>UIViewController</string>
 			<key>Description</key>
 			<string>What view controller class to subclass for the new module</string>
@@ -158,7 +172,7 @@
 		<string>com.apple.platform.iphoneos</string>
 	</array>
 	<key>SortOrder</key>
-	<string>2</string>
+	<string>0</string>
 	<key>Summary</key>
 	<string>This generates a new module using VIPER architecture.</string>
 </dict>
