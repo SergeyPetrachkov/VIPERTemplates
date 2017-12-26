@@ -1,4 +1,5 @@
-v2.3:
+v2.4:
 
-* removed redundant protocols
+* removed redundant template files
 * updated example
+* added module template for SiberianVIPER based table module

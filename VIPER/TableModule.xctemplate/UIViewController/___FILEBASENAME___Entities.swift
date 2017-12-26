@@ -22,7 +22,7 @@ enum ___VARIABLE_moduleName___ {
     }
     struct Response {
     }
-    struct ViewModel {
+    class ViewModel {
       init(moduleIn: ModuleIn) {
       	
       }

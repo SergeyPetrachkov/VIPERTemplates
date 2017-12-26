@@ -18,7 +18,7 @@ class ___VARIABLE_moduleName___Assembly {
   // MARK: - Public methods
   static func createModule(moduleIn: ___VARIABLE_moduleName___.DataContext.ModuleIn) -> ___VARIABLE_moduleName___ViewController {
     if let controller = UIStoryboard(name: storyboardId, bundle: nil).instantiateViewController(withIdentifier: controllerStoryboardId) as? ___VARIABLE_moduleName___ViewController {
-      let presenter = injectPresenter(moduleIn: moduleIn)
+      var presenter = injectPresenter(moduleIn: moduleIn)
       presenter.output = controller
       presenter.view = controller
       controller.presenter = presenter

@@ -2,6 +2,7 @@ XCODE_USER_TEMPLATES_DIR=~/Library/Developer/Xcode/Templates/File\ Templates
 XCODE_USER_SNIPPETS_DIR=~/Library/Developer/Xcode/UserData/CodeSnippets
 
 TEMPLATES_DIR=VIPER
+Snippets_DIR=Snippets
 
 install_templates:
 	mkdir -p $(XCODE_USER_TEMPLATES_DIR)
@@ -10,3 +11,14 @@ install_templates:
 
 uninstall_templates:
 	rm -fR $(XCODE_USER_TEMPLATES_DIR)/$(TEMPLATES_DIR)
+
+install_snippets:
+	mkdir -p $(XCODE_USER_SNIPPETS_DIR)
+	rm -fR $(XCODE_USER_SNIPPETS_DIR)/3E4F5BCD-E5DC-47A8-8219-15C99427DA7C.codesnippet
+	rm -fR $(XCODE_USER_SNIPPETS_DIR)/5DCFEB96-446F-4F4F-873D-8D2624EE64A2.codesnippet
+	cp -R $(Snippets_DIR)/3E4F5BCD-E5DC-47A8-8219-15C99427DA7C.codesnippet $(XCODE_USER_SNIPPETS_DIR)
+	cp -R $(Snippets_DIR)/5DCFEB96-446F-4F4F-873D-8D2624EE64A2.codesnippet $(XCODE_USER_SNIPPETS_DIR)
+
+uninstall_snippets:
+	rm -fR $(XCODE_USER_SNIPPETS_DIR)/3E4F5BCD-E5DC-47A8-8219-15C99427DA7C.codesnippet
+	rm -fR $(XCODE_USER_SNIPPETS_DIR)/5DCFEB96-446F-4F4F-873D-8D2624EE64A2.codesnippet

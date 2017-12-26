@@ -11,7 +11,7 @@
 
 import UIKit
 
-class ___VARIABLE_moduleName___ViewController: UIViewController {
+class ___VARIABLE_moduleName___ViewController: UITableViewController {
   // MARK: - UI properties
   
   // MARK: - Essentials

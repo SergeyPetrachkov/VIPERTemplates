@@ -19,3 +19,14 @@ To uninstall these Xcode templates, run:
 
 > make uninstall_templates
 
+
+There are additional snippets that will help you easily create (cell+cell model) pairs in SiberianVIPER style.
+Take a look at https://github.com/SergeyPetrachkov/SiberianVIPER 
+
+To install additional snippets, run:
+
+> make install_snippets
+
+To uninstall these snippets, run:
+
+> make uninstall_snippets

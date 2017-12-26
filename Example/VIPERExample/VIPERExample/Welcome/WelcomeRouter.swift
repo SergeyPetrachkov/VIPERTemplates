@@ -21,5 +21,7 @@ class WelcomeRouter: WelcomeRoutingLogic {
   func showPlainCodeModule(from view: UIViewController) {
     let controller = PlainCodeAssembly.createModule()
     view.navigationController?.pushViewController(controller, animated: true)
+//    let controller = TestAssembly.createModule(moduleIn: Test.DataContext.ModuleIn())
+//    view.navigationController?.pushViewController(controller, animated: true)
   }
 }

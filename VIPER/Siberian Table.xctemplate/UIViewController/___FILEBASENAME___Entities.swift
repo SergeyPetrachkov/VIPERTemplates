@@ -10,6 +10,7 @@
 //
 
 import UIKit
+import SiberianVIPER
 
 enum ___VARIABLE_moduleName___ {
   // MARK: - Use cases
@@ -19,12 +20,24 @@ enum ___VARIABLE_moduleName___ {
   	struct ModuleOut {
   	}
     struct Request {
+      let skip: Int
+      let take: Int
     }
     struct Response {
+      let originalRequest: Request
+      let items: [ListItemModel]
     }
-    struct ViewModel {
+    class ViewModel: CollectionViewModel {
+      var batchSize: Int = 20
+      
+      var items: [CollectionModel] = []
+      
+      var changeSet: [CollectionChange] = []
+      
+      var isBusy: Bool = false
+      
       init(moduleIn: ModuleIn) {
-      	
+        
       }
     }
   }
