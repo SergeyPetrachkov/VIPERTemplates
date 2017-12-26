@@ -15,7 +15,7 @@ class ___VARIABLE_moduleName___ViewController: UIViewController {
   // MARK: - UI properties
   
   // MARK: - Essentials
-  var presenter : ___VARIABLE_moduleName___PresenterInput?
+  var presenter: ___VARIABLE_moduleName___PresenterInput?
 
   // MARK: Initializers
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -26,16 +26,19 @@ class ___VARIABLE_moduleName___ViewController: UIViewController {
   }
   
   // MARK: - Setup
-  private func setup() {
+  fileprivate func setup() {
   }
   
   // MARK: - Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.setup()
   }
+
+  // MARK: - Actions
 }
-extension ___VARIABLE_moduleName___ViewController : ___VARIABLE_moduleName___PresenterOutput {
-  func didChangeState(viewModel : ___VARIABLE_moduleName___.DataContext.ViewModel) {
+extension ___VARIABLE_moduleName___ViewController: ___VARIABLE_moduleName___PresenterOutput {
+  func didChangeState(viewModel: ___VARIABLE_moduleName___.DataContext.ViewModel) {
     
   }
 }

@@ -16,9 +16,9 @@ class ___VARIABLE_moduleName___Assembly {
   fileprivate static let storyboardId = "Module"
   fileprivate static let controllerStoryboardId = "___VARIABLE_moduleName___"
   // MARK: - Public methods
-  static func createModule() -> ___VARIABLE_moduleName___ViewController {
+  static func createModule(moduleIn: ___VARIABLE_moduleName___.DataContext.ModuleIn) -> ___VARIABLE_moduleName___ViewController {
     if let controller = UIStoryboard(name: storyboardId, bundle: nil).instantiateViewController(withIdentifier: controllerStoryboardId) as? ___VARIABLE_moduleName___ViewController {
-      let presenter = injectPresenter()
+      let presenter = injectPresenter(moduleIn: moduleIn)
       presenter.output = controller
       presenter.view = controller
       controller.presenter = presenter
@@ -28,8 +28,8 @@ class ___VARIABLE_moduleName___Assembly {
     }
   }
   // MARK: - Private injections
-  fileprivate static func injectPresenter() -> ___VARIABLE_moduleName___PresenterInput {
-    let presenter = ___VARIABLE_moduleName___Presenter()
+  fileprivate static func injectPresenter(moduleIn: ___VARIABLE_moduleName___.DataContext.ModuleIn) -> ___VARIABLE_moduleName___PresenterInput {
+    let presenter = ___VARIABLE_moduleName___Presenter(moduleIn: moduleIn)
     let interactor = injectInteractor()
     interactor.output = presenter
     presenter.interactor = interactor

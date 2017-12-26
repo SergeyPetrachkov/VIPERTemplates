@@ -14,11 +14,18 @@ import UIKit
 enum ___VARIABLE_moduleName___ {
   // MARK: - Use cases
   enum DataContext {
+  	struct ModuleIn {
+  	}
+  	struct ModuleOut {
+  	}
     struct Request {
     }
     struct Response {
     }
     struct ViewModel {
+      init(moduleIn: ModuleIn) {
+      	
+      }
     }
   }
 }

@@ -12,12 +12,12 @@
 import UIKit
 
 protocol ___VARIABLE_moduleName___InteractorInput: class {
-  var output : ___VARIABLE_moduleName___InteractorOutput? { get set }
-  func doSomething(request: ___VARIABLE_moduleName___.DataContext.Request)
+  var output: ___VARIABLE_moduleName___InteractorOutput? { get set }
+  func requestData(request: ___VARIABLE_moduleName___.DataContext.Request)
 }
 
 protocol ___VARIABLE_moduleName___InteractorOutput: class {
-  func didReceive(some data : Any)
+  func didReceive(response: ___VARIABLE_moduleName___.DataContext.Response)
   func didFail(with error: Error)
 }
 
@@ -25,8 +25,8 @@ class ___VARIABLE_moduleName___Interactor: ___VARIABLE_moduleName___InteractorIn
   let service: ___VARIABLE_moduleName___ServiceProtocol = ___VARIABLE_moduleName___Service()
   weak var output: ___VARIABLE_moduleName___InteractorOutput?
   
-  // MARK: Do something
-  func doSomething(request: ___VARIABLE_moduleName___.DataContext.Request) {
+  // MARK: - Input
+  func requestData(request: ___VARIABLE_moduleName___.DataContext.Request) {
     // Let's say we execute some async operation, then we want to be able to inform our output when the operation is finshed
     // self.service.requestSomeDataAsync(requestParams: params, 
     //                                          succes: {

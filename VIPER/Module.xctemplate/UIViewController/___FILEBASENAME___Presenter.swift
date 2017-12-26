@@ -14,8 +14,8 @@ import UIKit
 protocol ___VARIABLE_moduleName___PresenterInput: class {
   var view: UIViewController! { get set }
   var output: ___VARIABLE_moduleName___PresenterOutput? { get set }
-  var router : ___VARIABLE_moduleName___RoutingLogic? { get set }
-  var interactor : ___VARIABLE_moduleName___InteractorInput? { get set }
+  var router: ___VARIABLE_moduleName___RoutingLogic? { get set }
+  var interactor: ___VARIABLE_moduleName___InteractorInput? { get set }
   func presentSomething()
 }
 protocol ___VARIABLE_moduleName___PresenterOutput: class {
@@ -25,21 +25,13 @@ protocol ___VARIABLE_moduleName___PresenterOutput: class {
 class ___VARIABLE_moduleName___Presenter: ___VARIABLE_moduleName___PresenterInput {
   // MARK: - Essentials
   weak var view: UIViewController!
-  weak var output : ___VARIABLE_moduleName___PresenterOutput?
-  var viewModel : ___VARIABLE_moduleName___.DataContext.ViewModel? {
-    didSet{
-      guard let viewModel = self.viewModel else {
-        return
-        //or do something else like show placeholder
-      }
-      self.output?.didChangeState(viewModel: viewModel)
-    }
-  }
-  var router : ___VARIABLE_moduleName___RoutingLogic?
-  var interactor : ___VARIABLE_moduleName___InteractorInput?
+  weak var output: ___VARIABLE_moduleName___PresenterOutput?
+  var viewModel: ___VARIABLE_moduleName___.DataContext.ViewModel!
+  var router: ___VARIABLE_moduleName___RoutingLogic?
+  var interactor: ___VARIABLE_moduleName___InteractorInput?
   // MARK: - Initializers
-  init() {
-    
+  init(moduleIn: ___VARIABLE_moduleName___.DataContext.ModuleIn) {
+    self.viewModel = ___VARIABLE_moduleName___.DataContext.ViewModel(moduleIn: moduleIn)
   }
   deinit {
     print("___VARIABLE_moduleName___Presenter deinit is called")
@@ -55,9 +47,9 @@ class ___VARIABLE_moduleName___Presenter: ___VARIABLE_moduleName___PresenterInpu
     // self.router.showNextModule(from: self.view, with: routingParams)
   }
 }
-extension ___VARIABLE_moduleName___Presenter : ___VARIABLE_moduleName___InteractorOutput {
+extension ___VARIABLE_moduleName___Presenter: ___VARIABLE_moduleName___InteractorOutput {
   // MARK: - Interactor output
-  func didReceive(some data: Any) {
+  func didReceive(response: ___VARIABLE_moduleName___.DataContext.Response) {
     // Process it and act accordingly like:
     // self.output?.didChangeState(viewModel : )
   }
