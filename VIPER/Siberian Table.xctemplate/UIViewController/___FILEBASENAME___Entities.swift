@@ -25,7 +25,7 @@ enum ___VARIABLE_moduleName___ {
     }
     struct Response {
       let originalRequest: Request
-      let items: [ListItemModel]
+      let items: [CollectionModel]
     }
     class ViewModel: CollectionViewModel {
       var batchSize: Int = 20

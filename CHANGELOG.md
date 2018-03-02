@@ -1,5 +1,3 @@
-v2.4:
+v2.5:
 
-* removed redundant template files
-* updated example
-* added module template for SiberianVIPER based table module
+*  small fix for siberian table module template
