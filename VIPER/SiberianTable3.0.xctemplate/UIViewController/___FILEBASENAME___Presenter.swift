@@ -37,7 +37,10 @@ class ___VARIABLE_moduleName___Presenter: CollectionPresenter, ___VARIABLE_modul
   var interactor: ___VARIABLE_moduleName___InteractorInput?
   // MARK: - Initializers
   init(moduleIn: ___VARIABLE_moduleName___.DataContext.ModuleIn) {
+    super.init()
     self.viewModel = ___VARIABLE_moduleName___.DataContext.ViewModel(moduleIn: moduleIn)
+    self.awaitableModel = self.viewModel
+    self.collectionModel = self.viewModel
   }
   deinit {
     print("___VARIABLE_moduleName___Presenter deinit is called")
@@ -53,8 +56,6 @@ class ___VARIABLE_moduleName___Presenter: CollectionPresenter, ___VARIABLE_modul
   override func start() {
     super.start()
     self.awaitableDelegate = self.output
-    self.awaitableModel = self.viewModel
-    self.collectionModel = self.viewModel
     _ = try? self.fetchItems(reset: true)
   }
   // MARK: - Base overrides
